@@ -84,16 +84,23 @@ def makeSolutionPage(language, probNum, probName,code):
 
 
 #CHANGE THIS WHEN MAKING PAGE
-language = "Python3"
+"""
+Python3, C++
+"""
+language = "C++"
 probNum = 1
 probName = "Two Sum"
 code = """
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for item in nums:
-            if ((target-item) in nums) and (nums.index(target-item) != nums.index(item)):
-                return [nums.index(item),nums.index(target-item)]
-        return [0,0]
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target)
+    {
+        for (int i = 0; i < nums.size(); i++)
+            for (int j = 0; j < nums.size(); j++)
+                if (nums[1] + nums[j] == target)
+                    return [i,j]
+    }
+};
 """
 
 
