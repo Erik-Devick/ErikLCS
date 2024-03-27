@@ -98,6 +98,7 @@ class Solution:
 makeListItem(language,probNum,probName)
 makeSolutionPage(language,probNum,probName,code)
 
+subprocess.run("git pull --rebase")
 subprocess.run("git add .")
 subprocess.run("git commit -m initialcommit")
 subprocess.run("git push origin main")
