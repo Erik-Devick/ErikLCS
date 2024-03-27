@@ -99,6 +99,7 @@ class Solution:
 makeListItem(language,probNum,probName)
 makeSolutionPage(language,probNum,probName,code)
 
+time.sleep(3)
 subprocess.run("git pull --rebase")
 time.sleep(3)
 subprocess.run("git add .")
