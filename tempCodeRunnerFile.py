@@ -1,1 +1,7 @@
-git push origin main
+subprocess.run("git pull --rebase")
+time.sleep(3)
+subprocess.run("git add .")
+time.sleep(3)
+subprocess.run("git commit -m initialcommit")
+time.sleep(3)
+subprocess.run("git push origin main")
