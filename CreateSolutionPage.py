@@ -3,7 +3,7 @@ import subprocess
 import time
 
 def makeListItem(language, probNum, probName):
-    newProb = (f'<li class="problems"><a href="{str(language)}/{str(probNum)}.html">{str(probNum)}. {str(probName)}</a></li>')
+    newProb = (f'<li class="problems"><a href="https://erik-devick.github.io/ErikLCS/{str(language)}/{str(probNum)}.html">{str(probNum)}. {str(probName)}</a></li>')
     infile = open(".\\"+language+".html","r")
     problemList = []
     listItem = re.compile(r'class="problems"')
