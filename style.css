@@ -1,0 +1,133 @@
+html{
+    margin: 0;
+    height: 100%;
+}
+
+.main {
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(#24252A 0%,#6f727a 100%);
+    background-attachment: fixed;
+}
+
+.mainHeader {
+    font-size: 100px;
+    color: #edf0f1;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+.smallHeader {
+    font-size: 50px;
+    color: #edf0f1;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #edf0f1;
+}
+
+.button{
+    flex: 0 0 20%;
+    padding: 30px;
+    margin: 10px;
+    background: none;
+    color: #edf0f1;
+    border: 2px solid #edf0f1;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+.button:hover{
+    animation-duration: 100ms;
+    animation-name: space;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    background-color: #edf0f1;
+    color: #40434e;
+}
+@keyframes space{
+    0% {
+        letter-spacing: 0px;
+        transform: scale(1);
+    }
+    100% {
+        letter-spacing: 5px;
+        transform: scale(1.05);
+    }
+}
+
+#searchbar {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    height: 50px;
+    background: none;
+    font-family: "Oswald", sans-serif;
+    color: #edf0f1;
+    border: 2px solid #edf0f1;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+#list {
+    font-size: 40px;
+    color: #edf0f1;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.problems {
+    display: list-item;
+}
+.container {
+    background-color: #24252A;
+    color: #edf0f1;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-family: "Oswald",sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+pre {
+    display: inline-block;
+}
+code {
+    text-align: center;
+    vertical-align: middle;
+}
+/*
+text-align: center;
+
+display: inline-block;
+text-align: left;
+padding-right:10%;
+color: #edf0f1;
+background-color: #24252A;
+font-size: 20px;
+border-radius: 10px;
+border: 2px solid black;
+*/
