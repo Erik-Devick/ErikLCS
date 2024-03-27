@@ -1,0 +1,22 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <link rel="stylesheet" href="https://erik-devick.github.io/ErikLCS/style.css">
+        <head>
+            <title>Two Sum</title>
+        </head>
+        <body>
+            <h1 class="smallHeader">1. Two Sum</h1> 
+            <pre class="container">
+                <code>
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for item in nums:
+            if ((target-item) in nums) and (nums.index(target-item) != nums.index(item)):
+                return [nums.index(item),nums.index(target-item)]
+        return [0,0]
+                </code>
+            </pre>
+        </body>
+    </html>
+    

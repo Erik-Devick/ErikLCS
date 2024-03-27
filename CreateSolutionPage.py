@@ -85,14 +85,15 @@ def makeSolutionPage(language, probNum, probName,code):
 
 #CHANGE THIS WHEN MAKING PAGE
 language = "Python3"
-probNum = 9
-probName = "Palindrome Number"
+probNum = 1
+probName = "Two Sum"
 code = """
 class Solution:
-    def isPalindrome(self, x: int) -> bool:
-        x = str(x)
-        xRev = x[::-1]
-        return x == xRev
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for item in nums:
+            if ((target-item) in nums) and (nums.index(target-item) != nums.index(item)):
+                return [nums.index(item),nums.index(target-item)]
+        return [0,0]
 """
 
 
