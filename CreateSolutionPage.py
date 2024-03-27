@@ -1,5 +1,6 @@
 import re
 import subprocess
+import time
 
 def makeListItem(language, probNum, probName):
     newProb = (f'<li class="problems"><a href="{str(language)}/{str(probNum)}.html">{str(probNum)}. {str(probName)}</a></li>')
@@ -97,6 +98,14 @@ class Solution:
 
 makeListItem(language,probNum,probName)
 makeSolutionPage(language,probNum,probName,code)
+
+subprocess.run("git pull --rebase")
+time.sleep(3)
+subprocess.run("git add .")
+time.sleep(3)
+subprocess.run("git commit -m initialcommit")
+time.sleep(3)
+subprocess.run("git push origin main")
 
 """
 git pull --rebase
